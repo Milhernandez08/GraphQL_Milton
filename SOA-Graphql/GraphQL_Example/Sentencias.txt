@@ -1,0 +1,24 @@
+{
+  products{
+    name
+  }
+}
+
+mutation{
+  addProduct(name:"Totis", description:"Chucheria"
+  ){
+    name, description
+  }
+}
+
+mutation{
+  updateProduct(id:1,description:"Refresco"){
+    name, description
+  }
+}
+
+mutation{
+  removeProduct(id:3){
+    name
+  }
+}
